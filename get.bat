@@ -1,5 +1,11 @@
 @echo off
-for /f "delims=" %%i in ('git describe --exact-match --tags') do (set a=%%i)
-echo %a%
-if "%a:abc=%"=="%a%" (echo ²»°üº¬abc) else echo °üº¬abc
+setlocal enableextensions
+for /f "tokens=*" %%a in (
+'git describe --exact-match --tag'
+) do (
+set myvar=%%a
+)
+if "%myvar%"=="" (echo yes) else echo no
+
 pause
+endlocal
