@@ -1,6 +1,6 @@
 @echo off
 @color 02
-set ALL=demo123
+set ALL=echova
 echo %ALL%
 set VAT=%ALL:~0,3%
 echo %VAT%
