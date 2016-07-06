@@ -2,7 +2,7 @@
 git add .
 git commit -m "test"
 
-    for /f "delims=" %%a in (D:\JinZhiyong\2.txt) do (
+    for /f "delims=" %%a in (D:\JinZhiyong\Tag.txt) do (
     git tag %%a
     ) 
 git push
