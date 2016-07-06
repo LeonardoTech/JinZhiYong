@@ -1,6 +1,6 @@
-git add .
 @echo off
+git add .
+git commit -m "ss"
 set /p a=<D:\JinZhiyong\.git\FETCH_HEAD1
-git commit -m %a%
 git push
 pause>null
